@@ -21,13 +21,19 @@
           <img src="{{site.logo | relative_url}}" alt="Logo" />
         {% endif %}
 
-        <p>{{ site.description | default: site.github.project_tagline }}</p>
+        <p>{{ site.bio1 }}</p>
+
+        <p>{{ site.bio2 }}</p>
+
+        <p>{{ site.skills }}</p>
+
+        <p><a href="mailto:ziad.demir@icloud.com">E-Mail</a> / <a href="https://cohost.org/ziaddd">Cohost</a></p>
 
         {% if site.github.is_project_page %}
         <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
-        {% endif %}
+        {% endif %}                            
 
-        {% if site.github.is_user_page %}
+        {% if site.show_github %}
         <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
         {% endif %}
 

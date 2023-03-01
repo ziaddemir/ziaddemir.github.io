@@ -1,6 +1,10 @@
 title: Ziad Demir
 logo: /assets/img/ziad.png
-description: Ziad is a Game Developer and BA Student at Cologne Game Lab based in Germany.
+description: Game Dev
+bio1: Ziad is a Game Developer and BA Student at Cologne Game Lab based in Germany.
+bio2: Interested in skill-based systems, expressive mechanics and games history, will prototype stuff if he has to.
+skills: Godot / Unity / Logic Pro / Final Cut Pro / done some pixel art
 show_downloads: false
+show_github: false
 google_analytics:
 theme: jekyll-theme-minimal
