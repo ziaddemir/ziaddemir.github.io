@@ -2,3 +2,143 @@
 ---
 
 @import "jekyll-theme-minimal";
+
+/* ===================================== */
+/* CONTACT LIST – DESKTOP SIDEBAR        */
+/* ===================================== */
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 40px 0 20px 0;
+}
+
+.contact-list li {
+  margin-bottom: 20px;
+}
+
+.contact-list a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  line-height: 1.5;
+}
+
+.contact-list img {
+  width: 36px;
+  height: 36px;
+  display: block;
+  margin-right: 10px;
+}
+
+/* Fix text vertical offset */
+.contact-list span {
+  position: relative;
+  top: -2px;
+}
+
+/* ===================================== */
+/* FIX MINIMAL ABSOLUTE POSITIONING      */
+/* (This caused the top-right jump)      */
+/* ===================================== */
+
+@media screen and (max-width: 960px) {
+
+  header ul.contact-list {
+    position: static;
+    right: auto;
+    top: auto;
+  }
+
+}
+
+
+/* ===================================== */
+/* TABLET + MOBILE LAYOUT                */
+/* ===================================== */
+
+@media screen and (max-width: 960px) {
+
+  .contact-list {
+    display: flex;
+    gap: 25px;
+    margin-top: 10px;
+  }
+
+  .contact-list span {
+    display: none;
+  }
+
+  .contact-list img {
+    width: 36px;
+    height: 36px;
+  }
+
+  header img {
+  max-width: none;
+    }
+
+
+}
+
+
+/* ===================================== */
+/* MOBILE CLEANUP (<720px)               */
+/* ===================================== */
+
+@media screen and (max-width: 720px) {
+
+  .contact-list {
+    gap: 25px;
+  }
+
+  .contact-list img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .contact-list img {
+    width: 36px;
+    height: 36px;
+  }
+
+  header img {
+  max-width: 100%;
+}
+
+}
+
+.video-link {
+  display:block;
+  width:100%;
+}
+
+.video-link video {
+  width:100%;
+  height:auto;
+  display:block;
+}
+
+.autoplay-video {
+  max-width: 100%;
+  margin-bottom:10px;
+}
+
+/* responsive youtube embeds */
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 ratio */
+  height: 0;
+  margin: 20px 0; /* vertical margins */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}

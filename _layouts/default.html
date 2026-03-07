@@ -13,6 +13,27 @@
     <![endif]-->
     {% include head-custom.html %}
   </head>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const videos = document.querySelectorAll(".autoplay-video");
+    videos.forEach(video => {
+      // Try to play immediately
+      video.play().catch(() => {});
+
+      // Chrome sometimes stops very short videos; restart on ended
+      video.addEventListener("ended", () => {
+        video.currentTime = 0;
+        video.play().catch(() => {});
+      });
+
+      // Optional: ensure looping for safety
+      video.addEventListener("pause", () => {
+        if (!video.paused) return; // ignore intentional pauses
+        video.play().catch(() => {});
+      });
+    });
+  });
+</script>
   <body>
     <div class="wrapper">
       <header>
@@ -28,7 +49,50 @@
 
         <p>{{ site.skills }}</p>
 
-        <p><a href="mailto:ziad.demir@icloud.com">E-Mail</a> / <a href="https://youtube.com/wondermagenta">YouTube</a></p>
+        <ul class="contact-list">
+
+          <li>
+            <a href="{% link pages/aboutme.md %}">
+              <img src="{{ '/assets/icons/aboutme.svg' | relative_url }}" alt="">
+              <span>who?</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="mailto:ziad.demir@icloud.com">
+              <img src="{{ '/assets/icons/mail.svg' | relative_url }}" alt="">
+              <span>email</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.linkedin.com/in/ziad-demir-461b71283/">
+              <img src="{{ '/assets/icons/linkedin.svg' | relative_url }}" alt="">
+              <span>linkedin</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://youtube.com/wondermagenta">
+              <img src="{{ '/assets/icons/youtube.svg' | relative_url }}" alt="">
+              <span>youtube</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://twitch.tv/ziadbruh">
+              <img src="{{ '/assets/icons/twitch.svg' | relative_url }}" alt="">
+              <span>twitch</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.tiktok.com/@ziadbruh">
+              <img src="{{ '/assets/icons/tiktok.svg' | relative_url }}" alt="">
+              <span>tiktok</span>
+            </a>
+          </li>
+</ul>
 
         {% if site.github.is_project_page %}
         <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
