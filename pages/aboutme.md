@@ -8,7 +8,7 @@ layout: default
 
 ![Ziad](/assets/img/aboutme.jpg)
 
-My name’s Ziad! I’m a Cologne Game Lab BA graduate with a particular interest in mechanical design and games history. My studies cover theory and practice in equal measure: I’ve come to develop both a detailed understanding of what I value in games, as well as gain rich hands-on experience across wildly different genres, working with a diverse and wonderful set of people.
+My name’s Ziad! I’m a Cologne Game Lab MA graduate with a particular interest in mechanical design and games history. My studies cover theory and practice in equal measure: I’ve come to develop both a detailed understanding of what I value in games, as well as gain rich hands-on experience across wildly different genres, working with a diverse and wonderful set of people.
 
 My approach to game design aims for clarity and richness. I don’t take the player’s time for granted and respect their intelligence, so it’s crucial to break down artificial barriers and make things as intuitive as possible. However, this shouldn’t come at the cost of interesting choices and situations: the best games are those that build cohesive mechanical universes of constant interaction and feedback. The best games make this look incredibly simple, but I believe that arriving at true simplicity requires hard work, thought and iteration.
 
