@@ -52,6 +52,10 @@ An analysis of the possible effects of _Grand Theft Auto 6's_ release on the res
 
 ***
 
+![HitStopFM](/assets/img/hitstopdeluxe.jpeg)
+
+***
+
 ![HitStopFM](/assets/img/hitstop3.jpeg)
 
 ***
